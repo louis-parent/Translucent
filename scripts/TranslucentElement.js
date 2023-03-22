@@ -72,16 +72,19 @@ class TranslucentElement extends HTMLElement
 	
 	createReferencedElement(ref, tag, attributes)
 	{
-		const element = this.createElement(tag, attributes);	
-		
+		const element = this.createElement(tag, attributes);
+		this.reference(ref, element);
+		return element;
+	}
+	
+	reference(ref, element)
+	{
 		this.refs[ref] = element;
 		Object.defineProperty(this, ref + "Element", {
 			get: function() {
 				return this.refs[ref];
 			}
 		});
-		
-		return element;
 	}
 }
 

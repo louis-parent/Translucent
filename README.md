@@ -21,4 +21,5 @@ The vanilla `HTMLElement` offer a callback for attribute change declared in `obs
 
 ### Referenced Element
 
-`TranslucentElement` have a method `createReferencedElement(ref, tag, attributes)` that work like `createElement(tag, attributes)` but add a getter named `ref` that allow to directly access the element.
+`TranslucentElement` have a method `createReferencedElement(ref, tag, attributes)` that work like `createElement(tag, attributes)` but add a getter named `ref + "Element"` that allow to directly access the element.
+The method `reference(ref, element)` allow to create a reference like with `createReferencedElement(ref, tag, attributes)` but on an existing element.
