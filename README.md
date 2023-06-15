@@ -2,6 +2,10 @@
 
 **Translucent** is a very lightweight wrapper for vanilla custom `HTMLElement`.
 
+## Usage
+
+You can directly include the `scripts` folder into a project and extend the class from the file `scripts/TranslucentElement.js` or use a CDN that interface Github like jsDelivr : [https://cdn.jsdelivr.net/gh/louis-parent/Translucent@main/scripts/TranslucentElement.js](https://cdn.jsdelivr.net/gh/louis-parent/Translucent@main/scripts/TranslucentElement.js).
+
 ## Documentation
 
 To use **Translucent**, you must extend `TranslucentElement` in your custom elements.
